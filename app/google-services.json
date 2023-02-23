@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "554139659809",
+    "firebase_url": "https://remotecare-e1d52-default-rtdb.firebaseio.com",
+    "project_id": "remotecare-e1d52",
+    "storage_bucket": "remotecare-e1d52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554139659809:android:f04ccd0c9c5417499fbd60",
+        "android_client_info": {
+          "package_name": "com.FYP.remotecare_watch_fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554139659809-b8fm99fo3ge8g62lc68fe5i0kn1vmits.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Zhut076x8QtO_-V0QK_LGC2s89evc8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554139659809-b8fm99fo3ge8g62lc68fe5i0kn1vmits.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554139659809:android:505715a456273e529fbd60",
+        "android_client_info": {
+          "package_name": "com.WaqasAhmad.i190606"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554139659809-b8fm99fo3ge8g62lc68fe5i0kn1vmits.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Zhut076x8QtO_-V0QK_LGC2s89evc8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554139659809-b8fm99fo3ge8g62lc68fe5i0kn1vmits.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554139659809:android:fbf7befa9b91c9209fbd60",
+        "android_client_info": {
+          "package_name": "com.waqasahmad.remotecare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554139659809-b8fm99fo3ge8g62lc68fe5i0kn1vmits.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Zhut076x8QtO_-V0QK_LGC2s89evc8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554139659809-b8fm99fo3ge8g62lc68fe5i0kn1vmits.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
