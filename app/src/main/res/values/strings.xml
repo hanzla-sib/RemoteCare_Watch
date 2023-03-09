@@ -8,4 +8,5 @@
     <string name="title_activity_main_screen">MainScreen</string>
     <string name="title_activity_steps_counter">StepsCounter</string>
     <string name="title_activity_ip_change_screen">Ip_change_screen</string>
+    <string name="title_activity_heart_beat_warch">Heart_beat_warch</string>
 </resources>

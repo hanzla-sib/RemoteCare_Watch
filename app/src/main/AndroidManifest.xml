@@ -19,12 +19,12 @@
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.DeviceDefault">
+        android:theme="@android:style/Theme.DeviceDefault"
+        android:usesCleartextTraffic="true">
         <uses-library
             android:name="com.google.android.wearable"
             android:required="true" />
@@ -38,9 +38,13 @@
             android:value="true" />
 
         <activity
+            android:name=".Heart_beat_warch"
+            android:exported="false"
+            android:label="@string/title_activity_heart_beat_warch"></activity>
+        <activity
             android:name=".Ip_change_screen"
             android:exported="false"
-            android:label="@string/title_activity_ip_change_screen"></activity>
+            android:label="@string/title_activity_ip_change_screen" />
         <activity
             android:name=".StepsCounter"
             android:exported="false"

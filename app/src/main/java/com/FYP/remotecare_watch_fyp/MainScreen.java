@@ -42,7 +42,13 @@ public class MainScreen extends Activity {
                 startActivity(new Intent(MainScreen.this, MainActivity.class));
             }
         });
-
+heart.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent(MainScreen.this,Heart_beat_warch.class);
+        startActivity(intent);
+    }
+});
 
     }
 }
