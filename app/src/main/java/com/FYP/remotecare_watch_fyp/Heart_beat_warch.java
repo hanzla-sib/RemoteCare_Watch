@@ -15,15 +15,27 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.firebase.auth.FirebaseAuth;
 
+import org.jetbrains.annotations.Nullable;
 import org.json.JSONArray;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Heart_beat_warch extends Activity implements SensorEventListener {
     private PowerManager.WakeLock wakeLock;
@@ -105,42 +117,41 @@ public class Heart_beat_warch extends Activity implements SensorEventListener {
                      simpleProgressBar.setVisibility(View.GONE);
                     mTextView.setText(String.valueOf(heartRate));
 
+                    StringRequest request=new StringRequest(Request.Method.POST, url1, new com.android.volley.Response.Listener<String>()
+                    {
+                        @Override
+                        public void onResponse(String response)
+                        {
+                            Log.d("checking",response.toString());
+//                               Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_LONG).show();
+                        }
+                    }, new Response.ErrorListener()
+                    {
+                        @Override
+                        public void onErrorResponse(VolleyError error)
+                        {
+                            Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_LONG).show();
+                        }
+                    })
+                    {
+                        @Nullable
+                        @Override
+                        protected Map<String, String> getParams() throws AuthFailureError {
+                            Map<String,String> param=new HashMap<String,String>();
+
+
+                            param.put("email",useremail);
+                            param.put("h_rate",String.valueOf(heartRate));
+                            return param;
+                        }
+                    };
+                    RequestQueue queue= Volley.newRequestQueue(getApplicationContext());
+                    queue.add(request);
                     sensorManager.unregisterListener(this);
                 }
             }
-//
-//            StringRequest request=new StringRequest(Request.Method.POST, url1, new com.android.volley.Response.Listener<String>()
-//            {
-//                @Override
-//                public void onResponse(String response)
-//                {
-//                    Log.d("checking",response.toString());
-////                                Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_LONG).show();
-//                }
-//            }, new Response.ErrorListener()
-//            {
-//                @Override
-//                public void onErrorResponse(VolleyError error)
-//                {
-//                    Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_LONG).show();
-//                }
-//            })
-//            {
-//                @Nullable
-//                @Override
-//                protected Map<String, String> getParams() throws AuthFailureError {
-//                    Map<String,String> param=new HashMap<String,String>();
-//
-//
-//                    param.put("email",useremail);
-//                    param.put("steps",Integer.toString(stepCount));
-//                    param.put("h_rate",String.valueOf(heartRate));
-//
-//                    return param;
-//                }
-//            };
-//            RequestQueue queue= Volley.newRequestQueue(getApplicationContext());
-//            queue.add(request);
+
+
 
         }
     }
