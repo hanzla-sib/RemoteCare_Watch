@@ -6,22 +6,20 @@
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".StepsCounter"
+    android:background="#55568E6A"
+
     tools:deviceIds="wear">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_boxedEdges="all">
+
         <ProgressBar
+
             android:id="@+id/progress_bar"
-            style="@android:style/Widget.Material.ProgressBar.Small"
+            style="@android:style/Widget.Material.ProgressBar.Large"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            />
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -36,7 +34,16 @@
                 android:textSize="50sp"
                 android:text="0" />
         </LinearLayout>
+<!--        <TextView-->
+<!--            android:padding="1dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="50sp"-->
+
+<!--            android:text="1000" />-->
 
 
-    </FrameLayout>
+
+
 </androidx.wear.widget.BoxInsetLayout>

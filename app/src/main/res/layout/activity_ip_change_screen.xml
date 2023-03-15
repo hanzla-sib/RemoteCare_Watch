@@ -6,9 +6,11 @@
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".Ip_change_screen"
-    tools:deviceIds="wear">
+    tools:deviceIds="wear"
+    android:background="#55568E6A">
 
     <FrameLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/inner_frame_layout_padding"

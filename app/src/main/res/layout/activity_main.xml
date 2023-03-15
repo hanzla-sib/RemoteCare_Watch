@@ -7,6 +7,7 @@
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".MainActivity"
     tools:deviceIds="wear"
+    android:background="#55568E6A"
 
     >
 

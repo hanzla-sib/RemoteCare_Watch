@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".MainScreen"
+    android:background="#55568E6A"
     tools:deviceIds="wear">
 
 
@@ -25,7 +26,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/steps"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
 
                 >
                 <TextView
@@ -39,7 +40,7 @@
                 android:id="@+id/Heartbeat"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
 
                 >
                 <TextView
@@ -53,7 +54,7 @@
                 android:id="@+id/Logout"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
 
                 >
 

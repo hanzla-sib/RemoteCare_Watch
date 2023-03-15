@@ -6,13 +6,8 @@
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
     tools:context=".Heart_beat_warch"
+    android:background="#55568E6A"
     tools:deviceIds="wear">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="@dimen/inner_frame_layout_padding"
-        app:layout_boxedEdges="all">
 
         <LinearLayout
 
@@ -22,14 +17,12 @@
             android:gravity="center"
             >
             <ProgressBar
+
                 android:id="@+id/progress_bar"
-                style="@android:style/Widget.Material.ProgressBar.Small"
+                style="@android:style/Widget.Material.ProgressBar.Large"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                />
             <TextView
 
                 android:layout_gravity="center"
@@ -41,5 +34,5 @@
         </LinearLayout>
 
 
-    </FrameLayout>
+
 </androidx.wear.widget.BoxInsetLayout>
